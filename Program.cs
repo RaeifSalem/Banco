@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Banco
 {
@@ -23,20 +23,22 @@ namespace Banco
                 {
                     Console.WriteLine("Senha incorreta. Por favor, digite novamente:");
                 }
+                
             }
             bool continuar = true;
-
+            int saldo = 1000;
+            Console.WriteLine("Acesso permitido.");
+            Console.WriteLine("Senha correta. Escolha uma opção:");
             while (continuar)
             {
-                Console.WriteLine("Acesso permitido.");
-                Console.WriteLine("Senha correta. Escolha uma opção:");
+               
                 Console.WriteLine("1. Depositar");
                 Console.WriteLine("2. Sacar");
                 Console.WriteLine("3. Consultar saldo");
                 Console.WriteLine("4. Sair");
 
                 int opcao = Convert.ToInt32(Console.ReadLine());
-                int saldo = 1000;
+               
                 switch (opcao)
                 {
 
